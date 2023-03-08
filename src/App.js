@@ -1,24 +1,42 @@
 import logo from './logo.svg';
-import './App.css';
+import Project from './Project.js'
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+  <>
+    <div className="row">
+      <Project
+        project="seveneightsix"
+        info="
+        A web application that helps developers build eco-concious websites. This project won HackViolet2023's Best Eco-Friendly Hack!
+        
+        "
+        tags={['Python', 'Flask', 'Jinja2', 'HTML', 'CSS']}
+        link="https://github.com/benjaminchin"
+      />
+
+      <Project
+        project="Venmo Sheets"
+        info="
+        Python script that automatically adds incoming Venmo transactions to a running list on Google Sheets.
+        
+        "
+        tags={['Python', 'venmo-api', 'Google Cloud']}
+        link="https://github.com/benjaminchin"
+      />
+
+      <Project
+        project="Venmo Sheets"
+        info="
+        Python script that automatically adds incoming Venmo transactions to a running list on Google Sheets.
+        
+        "
+        tags={['Python', 'venmo-api', 'Google Cloud']}
+        link="https://github.com/benjaminchin"
+      />
+
     </div>
+  </>
   );
 }
 
