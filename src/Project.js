@@ -11,7 +11,7 @@ export default function Project(props) {
                 />
                 <h1>{props.project}</h1>
                 <p>{props.info}</p>
-                <p className="tags">{props.tags.join(' ')}</p>
+                <p className="tags">{props.tags.join(', ')}</p>
             </div>
         </div>
     )

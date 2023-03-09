@@ -25,6 +25,14 @@ body {
 
   display: flex;
   flex-direction: column;
+  transition: 0.5s ease all;
+}
+
+.card:hover {
+  box-shadow: 5px 5px 10px #03fc98;
+  transition: 0.5s ease all;
+  width: 30.5rem;
+  height: 20.5rem;
 }
 
 .card > h1, p {
@@ -40,4 +48,10 @@ body {
 section {
   display: flex;
   justify-content: space-between;
+}
+
+
+.tags {
+  position: absolute;
+  top: 20rem;
 }
